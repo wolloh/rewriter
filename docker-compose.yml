@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  rewriter_api:
+    image: ${DOCKER_REGISTRY-}rewriterapi
+    build:
+      context: .
+      dockerfile: System/Api/rewriter.api/Dockerfile
+
+
+  rewriter_identity:
+    image: ${DOCKER_REGISTRY-}rewriteridentity
+    build:
+      context: .
+      dockerfile: System/Identity/rewriter.identity/Dockerfile
+
+  rewriter_sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+
+

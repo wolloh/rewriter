@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  rewriter_api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5012:80"
+    env_file:
+      - env.api
+
+  rewriter_identity:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5013:80"
+    env_file:
+      - env.identity
+  rewriter_sqlserver:
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=qwertyQ1!
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlvolume:/var/opt/mssql
+
+volumes:
+   sqlvolume:
