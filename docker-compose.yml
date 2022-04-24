@@ -6,13 +6,16 @@ services:
     build:
       context: .
       dockerfile: System/Api/rewriter.api/Dockerfile
-
+    depends_on:
+      - rewriter.sqlserver
 
   rewriter_identity:
     image: ${DOCKER_REGISTRY-}rewriteridentity
     build:
       context: .
       dockerfile: System/Identity/rewriter.identity/Dockerfile
+    depends_on:
+      - rewriter.sqlserver
 
   rewriter_sqlserver:
     image: mcr.microsoft.com/mssql/server:2019-latest

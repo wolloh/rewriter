@@ -22,8 +22,15 @@ services:
       - SA_PASSWORD=qwertyQ1!
     ports:
       - "1433:1433"
+    networks:
+      - shared-rewriter-net
     volumes:
       - sqlvolume:/var/opt/mssql
 
 volumes:
    sqlvolume:
+networks:
+  shared-rewriter-net:
+    name: rewriter
+    driver: bridge
+  

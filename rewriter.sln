@@ -19,11 +19,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{94
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "rewriter.identity", "System\Identity\rewriter.identity\rewriter.identity.csproj", "{FB7D9F50-238A-498A-BFBE-1BBDF7042916}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rewriter.api", "System\Api\rewriter.api\rewriter.api.csproj", "{DC22A1E2-73C6-496F-9E54-8118049A9D48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "rewriter.api", "System\Api\rewriter.api\rewriter.api.csproj", "{DC22A1E2-73C6-496F-9E54-8118049A9D48}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{15D03CBA-4A77-4944-B478-C6DD6FE4BA4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rewriter.Shared.Settings", "Shared\rewriter.Shared.Settings\rewriter.Shared.Settings.csproj", "{5100820D-7ABC-4DC3-9B1A-797610D5FAE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "rewriter.Shared.Settings", "Shared\rewriter.Shared.Settings\rewriter.Shared.Settings.csproj", "{5100820D-7ABC-4DC3-9B1A-797610D5FAE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rewriter.Settings", "Service\rewriter.Settings\rewriter.Settings.csproj", "{961DC69B-1856-4D4F-95ED-5448F3C1B019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db.Entities", "Data\Db.Entities\Db.Entities.csproj", "{9D045E91-41CF-4AEF-B09F-8EE3827A31BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db.Context", "Data\Db.Context\Db.Context.csproj", "{AD832CC1-9AE9-424E-A9DC-4A5ECD8B01FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{5100820D-7ABC-4DC3-9B1A-797610D5FAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5100820D-7ABC-4DC3-9B1A-797610D5FAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5100820D-7ABC-4DC3-9B1A-797610D5FAE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961DC69B-1856-4D4F-95ED-5448F3C1B019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961DC69B-1856-4D4F-95ED-5448F3C1B019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961DC69B-1856-4D4F-95ED-5448F3C1B019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961DC69B-1856-4D4F-95ED-5448F3C1B019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D045E91-41CF-4AEF-B09F-8EE3827A31BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D045E91-41CF-4AEF-B09F-8EE3827A31BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D045E91-41CF-4AEF-B09F-8EE3827A31BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D045E91-41CF-4AEF-B09F-8EE3827A31BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD832CC1-9AE9-424E-A9DC-4A5ECD8B01FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD832CC1-9AE9-424E-A9DC-4A5ECD8B01FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD832CC1-9AE9-424E-A9DC-4A5ECD8B01FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD832CC1-9AE9-424E-A9DC-4A5ECD8B01FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +80,9 @@ Global
 		{FB7D9F50-238A-498A-BFBE-1BBDF7042916} = {94B6577A-839B-40AF-8589-39CA1DBCF56B}
 		{DC22A1E2-73C6-496F-9E54-8118049A9D48} = {B9A43D42-5987-4405-BAF9-75945A3B9C56}
 		{5100820D-7ABC-4DC3-9B1A-797610D5FAE0} = {5C2B95F9-D8B3-4CA8-8349-24971D2BEB09}
+		{961DC69B-1856-4D4F-95ED-5448F3C1B019} = {BB806B4E-1700-4BEF-81F3-781813AC68BA}
+		{9D045E91-41CF-4AEF-B09F-8EE3827A31BF} = {DEE271F1-7232-4220-9DD8-5537A5C8218D}
+		{AD832CC1-9AE9-424E-A9DC-4A5ECD8B01FA} = {DEE271F1-7232-4220-9DD8-5537A5C8218D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90B4EF29-CD1A-4C51-9B67-02569A153208}
