@@ -8,6 +8,6 @@ namespace rewriter.Settings.Interface
 {
     public interface IDbSettings
     {
-        string ConnectionString { get; };
+        string ConnectionString { get; } 
     }
 }

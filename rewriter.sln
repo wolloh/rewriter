@@ -25,11 +25,11 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "rewriter.Shared.Settings", "Shared\rewriter.Shared.Settings\rewriter.Shared.Settings.csproj", "{5100820D-7ABC-4DC3-9B1A-797610D5FAE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rewriter.Settings", "Service\rewriter.Settings\rewriter.Settings.csproj", "{961DC69B-1856-4D4F-95ED-5448F3C1B019}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "rewriter.Settings", "Service\rewriter.Settings\rewriter.Settings.csproj", "{961DC69B-1856-4D4F-95ED-5448F3C1B019}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db.Entities", "Data\Db.Entities\Db.Entities.csproj", "{9D045E91-41CF-4AEF-B09F-8EE3827A31BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Db.Entities", "Data\Db.Entities\Db.Entities.csproj", "{9D045E91-41CF-4AEF-B09F-8EE3827A31BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db.Context", "Data\Db.Context\Db.Context.csproj", "{AD832CC1-9AE9-424E-A9DC-4A5ECD8B01FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Db.Context", "Data\Db.Context\Db.Context.csproj", "{AD832CC1-9AE9-424E-A9DC-4A5ECD8B01FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
