@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.0.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ApiExplorer" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
@@ -23,7 +27,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Data\Db.Context\Db.Context.csproj" />
+    <ProjectReference Include="..\..\..\Service\rewriter.OrderService\rewriter.OrderService.csproj" />
     <ProjectReference Include="..\..\..\Service\rewriter.Settings\rewriter.Settings.csproj" />
+    <ProjectReference Include="..\..\..\Shared\rewriter.Shared.Common\rewriter.Shared.Common.csproj" />
   </ItemGroup>
 
 </Project>

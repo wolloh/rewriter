@@ -33,7 +33,7 @@ namespace rewriter.Settings.Source
             configuration = builder
                 .AddEnvironmentVariables()
                 .Build();
-        }
+         }
         private string ApplyEnvironmentVariable(string value)
         {
             value ??= "";

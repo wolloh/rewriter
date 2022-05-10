@@ -7,12 +7,13 @@ namespace rewriter.Settings
 {
     public static class Bootstrapper
     {
-        public static void AddSettings(this IServiceCollection services)
+        public static IServiceCollection AddSettings(this IServiceCollection services)
         {
             services.AddSingleton<ISettingSource, SettingsSource>();
             services.AddSingleton<IApiSettings, ApiSettings>();
             services.AddSingleton<IGeneralSettings, GeneralSettings>();
             services.AddSingleton<IDbSettings, DbSettings>();
+            return services;
         }
     }
 }
